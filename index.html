@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asim Manzoor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+            <span>Asim Manzoor</span>
+        </div>
+        <ul>
+            <li><a href="#" class="modal-link" data-modal="homeModal">Home</a></li>
+            <li><a href="#" class="modal-link" data-modal="aboutModal">About</a></li>
+            <li><a href="#" class="modal-link" data-modal="skillsModal">Skills</a></li>
+            <li><a href="#" class="modal-link" data-modal="servicesModal">Services</a></li>
+            <li><a href="#" class="modal-link" data-modal="blogsModal">Blogs</a></li>
+        </ul>
+        <button class="contact-btn" onclick="openEmail()">Contact Us</button>
+    </nav>
+
+    <!-- Modal Content -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal" id="homeModal">
+        <button class="close-btn" onclick="closeModal('homeModal')">Close</button>
+        <h2><b>Home </b></h2>
+        <p>Hi! I'm Asim Manzoor , providing  costum clearance services in saudia at  white dome logistics.Passionate about marketing , and ,costum  clearance related  tasks .I'm on a continuous journey of learning and growing in my field.  I also expedite my services in events management field and provide related Materials elsewhere needed in saudia arabia. I have production house in riyadh that fulfill that requirements.</p>   
+    </div>
+
+    <div class="modal" id="aboutModal">
+        <button class="close-btn" onclick="closeModal('aboutModal')">Close</button>
+        <h2><b>About </b></h2>
+        <p>Hi, I am Asim Manzoor. I am  Science graduate from AJK University, based in KASHMIR Pakistan. Passionate about biological marketing.and Costumer liaisons , I have 5 experience in pharmaceutical industry. My notable projects include an Employee Management System, New brand launching.Beside this now  Currently  I offered my services in Logistics field. Here I provided  custom clearance/both import And Export Documentation handling
+            Beside my Professional field I have also indulge  myself in business setup and provide Event management services through out whole Saudi Arabia.  I am widely offer Event related Materials,
+            Like  sitting arrangements, Decorations and everything that is related to Events I provide my services in All. 
+            I have also production unit in riyadh that manage All these stuffs.
+            I also offered costumers new and old office furniture on rental basis</p>
+    </div>
+
+    <div class="modal" id="skillsModal">
+        <button class="close-btn" onclick="closeModal('skillsModal')">Close</button>
+    <h2><b>Skills</b></h2>
+        <p><strong>Skills:</strong>My skillset including costum clearance,marketing and event management.</p>
+    </div>
+
+    <div class="modal" id="servicesModal">
+        <button class="close-btn" onclick="closeModal('servicesModal')">Close</button>
+        <h2><b>Services</b></h2>
+        <p>I provide services like documentation handling custom clearance both import and Export.beside this I also provide transportation for that upcoming or up going shipments in and outside Saudi Arabia From three years I am working as logistics operational manager in white Dome logistics.</p>
+    </div>
+
+    <div class="modal" id="blogsModal">
+        <button class="close-btn" onclick="closeModal('blogsModal')">Close</button>
+        <h2><b>Blogs</b> </h2>
+        <p><strong>Introduction:</strong>Since childhood, I've been fascinated in  Marketing field  My curiosity about how costumer grabbing through  your communication led me to choose logistics field as my career.</p>
+        <p><strong>Communication</strong>Soft skills are just as important. Sharing ideas with peers and working in a group like MT Software House improved my teamwork and presentation skills.
+            Impactful discussion with costumer about my services regarding their concerns about shipment</p>
+    </div>
+ <div style="display: flex; align-items: center; justify-content: center; gap: 50px;">
+    <div id="img">
+        <img src="project-40.picture.png" alt="RRA" class="styled-image">
+    </div>
+    <div id="mainbox">
+        <p style="font-size: 50px;"><b>Hey I'm <span style="color: #6b400f;">Asim Manzoor</span></b></p>
+        <p>Hi! I'm Asim Manzoor , providing  costum clearance services in saudia at  white dome logistics.Passionate about marketing , and ,costum  clearance related  tasks .I'm on a continuous journey of learning and growing in my field.  I also expedite my services in events management field and provide related Materials elsewhere needed in saudia arabia. I have production house in riyadh that fulfill that requirements.</p>
+        <div class="social-icons">
+            <a href="https://maps.app.goo.gl/PQ41Rix9V66K9xvK9/" target="_blank"><img src="maps-and-flags.png" alt="Google maps"></a>
+            <a href="https://www.tiktok.com/@asim.manzoor71?_t=ZS-8tfQEiF5yUC&_r=1" target="_blank">
+                <img src="tik-tok.png" alt="TikTok"></a>
+        
+            <a href="https://www.instagram.com/chair_sofaa_rental_services?igsh=ZnJ4a3lobGZoZHFi" target="_blank"><img src="instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/share/15xhRDc8vz/" target="_blank"><img src="facebook-app-symbol.png" alt="facebook"></a>
+        </div>
+        <button class="whatsapp-btn" onclick="openModal()">Contact on WhatsApp</button>
+
+<div id="whatsappModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Contact Me on WhatsApp</h2>
+        <p>My WhatsApp Number: <strong>+966581391995</strong></p>
+        <a href="https://wa.me/+966581391995" target="_blank" class="modal-whatsapp-link">Open WhatsApp</a>
+    </div>
+</div>
+
+        
+    </div>
+</div>
+
+<style>
+    /* Styling for the image */
+    .styled-image {
+        margin-top: 80px;
+        margin-left: 20px;
+        width: 350px; /* Adjust size */
+        height: auto;
+        height: 400px;
+        border-radius: 20px; /* Smooth corners */
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        transform: rotate(-5deg); /* Slight rotation for a stylish look */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    /* Hover effect */
+    .styled-image:hover {
+        transform: rotate(0deg) scale(1.05); /* Reset rotation and slightly increase size */
+        box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Styling for the text container */
+    #mainbox {
+        max-width: 500px;
+        text-align: left;
+    }
+</style>
+
+<script>
+    const modalLinks = document.querySelectorAll('.modal-link');
+    const modalOverlay = document.getElementById('modalOverlay');
+
+    modalLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const modalId = link.getAttribute('data-modal');
+            openNavModal(modalId);
+        });
+    });
+
+    function openNavModal(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.style.display = 'block';
+        modalOverlay.style.display = 'block';
+
+        // Add event listener for closing the modal
+        const closeBtn = modal.querySelector('.close-btn');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                closeNavModal(modalId);
+            });
+        }
+    }
+
+    function closeNavModal(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.style.display = 'none';
+        modalOverlay.style.display = 'none';
+    }
+
+    function openEmail() {
+    window.location.href = "mailto:asimmanzoor033@gmail.com?subject=Contact%20Inquiry&body=Hello,%20I%20would%20like%20to%20get%20in%20touch.";
+}
+
+
+    function openWhatsAppModal() {
+        document.getElementById("whatsappModal").style.display = "block";
+    }
+
+    function closeWhatsAppModal() {
+        document.getElementById("whatsappModal").style.display = "none";
+    }
+
+ 
+    function openModal() {
+        document.getElementById("whatsappModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("whatsappModal").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

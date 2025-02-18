@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to right, rgb(197, 188, 188), rgb(254, 215, 173));
+  padding-top: 60px; /* Prevent content from hiding behind navbar */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(to right, rgb(197, 188, 188), rgb(254, 215, 173));
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6b400f;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  padding-left: 600px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 5px; /* Adds space between text and underline */
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: aqua; /* Aqua color */
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%; /* Expands underline on hover */
+}
+
+.contact-btn {
+  border: 2px solid #6b400f;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+}
+
+.contact-btn:hover {
+  background: #5d3507;
+  color: aqua;
+}
+
+/* Modal Content */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  z-index: 1001;
+}
+
+.modal .close-btn {
+  background: #160a0a;
+  color: white;
+  border: none;
+  
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 16px;
+}
+.logo{
+  color: black;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.modal .close-btn:hover {
+  background: #190c0c;
+}
+
+.modal-overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+#mainbox {
+  margin-left: 400px;
+  margin-top: 100px;
+}
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #6b400f;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  background: #6b400f;
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.modal-whatsapp-link {
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.modal-whatsapp-link:hover {
+  background: #1ebe57;
+}
+.whatsapp-btn {
+  background: #6b400f; /* Base color */
+  color: white;
+  padding: 12px 25px;
+  border: 2px solid #6b400f;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 10px rgba(107, 64, 15, 0.4);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  margin-left: 130px;
+  margin-top: 10px;
+}
+
+/* Hover effect */
+.whatsapp-btn:hover {
+  background: rgb(13, 210, 20);
+  color: #f9f6f2;
+  box-shadow: 0 6px 15px rgba(107, 64, 15, 0.6);
+}
+
+/* WhatsApp icon */
+.whatsapp-btn::before {
+  content: "📞"; /* Unicode phone emoji */
+  font-size: 20px;
+}
+
